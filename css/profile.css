@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+
+    color: #FFFFFF;
+
+    min-height: 100vh;
+
+    padding-bottom: 85px;
+}
+
+
+.top-header {
+    width: 100%;
+
+    padding: 18px 30px;
+
+    background-color: #000000;
+
+    border-bottom: 1px solid #222222;
+}
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #DFFF2E;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.header-logo {
+    width: 38px;
+    height: 38px;
+
+    object-fit: contain;
+}
+
+
+.profile-container {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 35px 25px;
+}
+
+
+.page-intro {
+    margin-bottom: 25px;
+}
+
+.section-label {
+    color: #DFFF2E;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.page-intro h1 {
+    font-size: 32px;
+
+    margin: 7px 0;
+}
+
+.page-intro p {
+    color: #999999;
+
+    font-size: 14px;
+}
+
+
+.profile-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 25px;
+
+    background-color: #111111;
+
+    border: 1px solid #252525;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+}
+
+.profile-avatar {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #DFFF2E;
+
+    color: #000000;
+
+    font-size: 30px;
+}
+
+.profile-main-info h2 {
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+.profile-main-info p {
+    color: #888888;
+
+    font-size: 13px;
+}
+
+
+.profile-section,
+.options-section {
+    background-color: #111111;
+
+    border: 1px solid #252525;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+}
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+.section-heading h2,
+.options-section h2 {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.section-heading span {
+    color: #888888;
+
+    font-size: 12px;
+}
+
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #1A1A1A;
+
+    border: 1px solid #333333;
+
+    border-radius: 9px;
+
+    color: #FFFFFF;
+
+    outline: none;
+
+    font-size: 13px;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #DFFF2E;
+}
+
+.input-group select {
+    cursor: pointer;
+}
+
+.save-button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 5px;
+
+    background-color: #DFFF2E;
+
+    color: #000000;
+
+    border: none;
+
+    border-radius: 9px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.save-button:hover {
+    transform: translateY(-1px);
+}
+
+
+.option-button {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    background-color: #1A1A1A;
+
+    border: 1px solid #292929;
+
+    border-radius: 10px;
+
+    color: #FFFFFF;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.option-button > span {
+    font-size: 22px;
+
+    color: #DFFF2E;
+}
+
+.option-button strong {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 3px;
+}
+
+.option-button small {
+    color: #888888;
+
+    font-size: 11px;
+}
+
+.option-button:hover {
+    border-color: #DFFF2E;
+}
+
+
+.bottom-nav {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 70px;
+
+    background-color: #111111;
+
+    border-top: 1px solid #252525;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    z-index: 10;
+}
+
+.nav-item {
+    min-width: 65px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 3px;
+
+    color: #777777;
+
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+.nav-item small {
+    font-size: 11px;
+}
+
+.nav-item.active {
+    color: #DFFF2E;
+}
+
+
+@media (max-width: 700px) {
+
+    .top-header {
+        padding: 15px 18px;
+    }
+
+    .profile-container {
+        padding: 25px 18px;
+    }
+
+    .page-intro h1 {
+        font-size: 27px;
+    }
+
+    .profile-card {
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .bottom-nav {
+        gap: 15px;
+    }
+
+}

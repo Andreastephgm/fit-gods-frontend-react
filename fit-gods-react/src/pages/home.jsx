@@ -13,7 +13,7 @@ export const Home = () => {
     const usuarioGuardado = localStorage.getItem('fitGodsUsuario');
     if (usuarioGuardado) {
       const usuario = JSON.parse(usuarioGuardado);
-      setUserName(`Hola, ${usuario.nombre}`);
+      setUserName(`Hola,  ${ usuario.nombre}`);
     } else {
       setUserName('Hola');
     }

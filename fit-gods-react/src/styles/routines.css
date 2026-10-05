@@ -63,6 +63,10 @@ body {
 
 .page-intro {
     margin-bottom: 30px;
+
+    text-align: left;
+
+    font-weight: bold;
 }
 
 .section-label {
@@ -153,6 +157,10 @@ body {
     overflow: hidden;
 
     transition: 0.2s;
+
+    font-weight: bold;
+
+    text-align: left;
 }
 
 .routine-card:hover {

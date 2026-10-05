@@ -53,9 +53,9 @@ body {
     color: #DFFF2E;
 
     font-size: 30px;
+
     font-weight: 800;
 
-    letter-spacing: 2px;
 }
 
 .slogan {
@@ -63,7 +63,7 @@ body {
 
     font-size: 12px;
 
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 
     margin-top: 5px;
 }
@@ -71,11 +71,17 @@ body {
 .register-content h2 {
     font-size: 26px;
 
-    margin-bottom: 8px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    text-align: left;
 }
 
 .description {
     color: #A8A8A8;
+
+    text-align: left;
 
     font-size: 14px;
 
@@ -92,15 +98,14 @@ body {
 
 .input-group {
     margin-bottom: 18px;
+    text-align: left; 
 }
 
 .input-group label {
     display: block;
-
+    text-align: left; 
     color: #FFFFFF;
-
     font-size: 14px;
-
     margin-bottom: 8px;
 }
 

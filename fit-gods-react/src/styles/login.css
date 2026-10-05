@@ -53,7 +53,8 @@ body {
     color: #DFFF2E;
 
     font-size: 32px;
-    font-weight: 800;
+
+    font-weight: bold;
 
     letter-spacing: 2px;
 }
@@ -72,14 +73,16 @@ body {
     font-size: 26px;
 
     margin-bottom: 10px;
+
+    font-weight: bold;
+
+    text-align: left;
 }
 
 .description {
     color: #A8A8A8;
 
-    font-size: 14px;
-
-    line-height: 1.5;
+    font-size: 13px !important;
 
     margin-bottom: 25px;
 }

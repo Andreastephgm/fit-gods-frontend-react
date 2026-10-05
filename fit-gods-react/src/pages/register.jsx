@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import '../styles/register.css';
-import logoReg from '../assets/logo.png';
 
 export const Register = () => {
   const navigate = useNavigate();
@@ -23,14 +22,11 @@ export const Register = () => {
     });
   };
 
-  // Lógica del evento submit (registerForm)
   const handleSubmit = (e) => {
     e.preventDefault();
     const correoLimpio = formData.correo.trim().toLowerCase();
-
     const usuarios = JSON.parse(localStorage.getItem('fitGodsUsuarios')) || [];
 
-    // Validar si ya existe el correo
     const usuarioExistente = usuarios.find((user) => user.correo === correoLimpio);
 
     if (usuarioExistente) {
@@ -41,9 +37,7 @@ export const Register = () => {
     const nuevoUsuario = { ...formData, correo: correoLimpio };
     usuarios.push(nuevoUsuario);
 
-    // Guardar en localStorage
     localStorage.setItem('fitGodsUsuarios', JSON.stringify(usuarios));
-
     alert('Cuenta creada correctamente.');
     navigate('/login');
   };
@@ -52,7 +46,7 @@ export const Register = () => {
     <main className="register-container">
       <section className="register-card">
         <div className="logo-container">
-          <img src={logoReg} alt="Logo de FIT GODS" className="logo-image" />
+          <img src="/assets/logo.png" alt="Logo de FIT GODS" className="logo-image" />
           <h1>FIT GODS</h1>
           <p className="slogan">SUPERA TUS LÍMITES</p>
         </div>

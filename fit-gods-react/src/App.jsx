@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 // Importación de las páginas del proyecto
-import { Login } from './pages/Login';
+import { Login } from './pages/login';
 import { Register } from './pages/Register';
-import { Home } from './pages/Home';
-import { Routines } from './pages/Routines';
+import { Home } from './pages/home';
+import { Routines } from './pages/routines';
 import { Progress } from './pages/progress';
-import { Profile } from './pages/Profile';
+import { Profile } from './pages/profile';
 
 // Componente principal de la aplicación con las rutas de navegación
 function App() {
